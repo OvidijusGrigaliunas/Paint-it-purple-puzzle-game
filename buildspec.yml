@@ -1,0 +1,12 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      # Install dependencies needed for running tests
+      - npm install
+      - npm install socket.io
+      - npm install express ejs
+
+      # Upgrade AWS CLI to the latest version
+      - pip install --upgrade awscli

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ovidijus Grigaliūnas">
+        <meta name="description" content="Puzzle gane">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>Paint it purple</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/mainScript.js"></script>
+        <link href="/css/styles.css" rel="stylesheet">
+
+        <style>
+            img{
+                height: 100%;
+                width: 100%;
+                min-width: 100%;
+                min-height: 100%; 
+                left:0%;
+                top: 0%;
+                position:absolute;
+                z-index: 0;
+                overflow: hidden;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    
+<body>
+        
+    <div id ='gameScreen' class='GameScreen'>
+        <div id = 'mainScreen' class = 'mainScreen'>
+            <button onclick="levelSelect()" class='menubutton' id = 'levelSelectbtn'>Start</button>
+            <button onclick="ShowSettingsWindow()" class='menubutton'  id = 'settingsbtn'>Settings</button>
+        </div>
+        <div id = 'levelSelect' class = 'levelSelect'>
+            <button onclick="levelSelect()" class='returnbutton' id = 'returnbutton'>Return</button>
+            <div id = 'levelSelectionScreen' class = 'levelSelectionScreen'> </div>
+        </div>
+        <div id = 'settingsWindow' class = 'settingsWindow'>
+            <div id ='settingsWindow2'  class = 'settingsWindow2'>
+                <div class = 'volumesettingsLine'>
+                    <p>Volume:</p>
+                    <div id = 'volumesettings' class = 'volumesettings'> </div>
+                </div>
+                <button onclick="returntomenu()" class='returnsettingbutton' id = 'returnsettingbutton'>Return</button>
+            </div>
+
+        </div>
+        <div id = 'reset-menu' class = 'reset-menu'>
+            <button onclick="returntomenu()" class='buttonReset'>Return to menu</button>
+            <button onclick="loadLevel()" class='buttonReset'>Reset</button>
+        </div>
+        <div id = 'puzzlePiecesHolder' class = 'puzzlePiecesHolder'></div>
+        <div id = 'mainDiv' class = 'mainD'></div>
+        <div id ='tutorial' class = 'tutorial'></div>
+    </div>
+    <audio id = 'musicAudio'autoplay loop>
+        <source src="/music/BeepBox-Song.wav" type="audio/wav">
+    </audio>
+    <div id='onList' class= 'onList'>
+        <h1>Currently playing</h1>
+        <ul id='currentOn'></ul>
+    </div>
+   
+    
+
+
+</body>
+</html>

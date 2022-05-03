@@ -1,0 +1,345 @@
+body{
+    background-color: rgb(85, 76, 76);
+}
+.mainD{
+    display: grid;
+    grid-template-columns: repeat(9, 4rem);
+    z-index: 9;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.EmptySquare{
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+.Prison{
+    background-color: yellow;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+.EmptySquareLevel4{
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+.Blockage{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+}
+.BlockageLevel4{
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+}
+.puzzlePiecesHolder{
+    display: grid;
+    position: absolute;
+    margin-top: 8.6rem;
+    grid-template-columns: repeat(1, 4rem);
+    height: 35.3rem;
+    width: 10rem;
+    background-color: rgb(39, 38, 38);
+    z-index: 9;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    align-content: center;
+}
+
+.puzzlePieces{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    margin-left: 1.9rem;;
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 0, 87);
+    text-align: center;
+    cursor: pointer;
+
+}
+.GameScreen{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    background-color: rgb(49, 41, 88);
+    width: 94rem;
+    height: 44rem;
+    border: 10px solid rgba(0, 0, 0, 0.8);
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none; 
+
+
+}
+.mainScreen{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    background-color: rgb(49, 41, 88);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    grid-template-columns: repeat(1, 100%); 
+}
+.reset-menu{
+    display: grid;
+    position: absolute;
+    columns: 3rem;
+    align-content: center;
+}
+.button {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 21.6px;
+    cursor: pointer;
+}
+.menubutton {
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 30rem;
+    height: 6rem;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 21.6px;
+    z-index: 101;
+    cursor: pointer;
+    margin-left: 32rem;
+
+}
+.returnsettingbutton{
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 30rem;
+    height: 6rem;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 21.6px;
+    z-index: 101;
+    cursor: pointer;
+    margin-left: 5rem;
+
+}
+.buttonReset {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 21.6px;
+    cursor: pointer;
+    width: 10.1rem;
+}
+.returnbutton {
+    background-color: rgb(39, 38, 38);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 21.6px;
+    cursor: pointer;
+    width: 10.1rem;
+    visibility: hidden;
+}
+.tutorial{
+    display: block;
+    position: absolute;
+    margin-left: 89.3%;
+    height: 100%;
+    width: 10rem;
+    background-color: rgb(39, 38, 38);
+    z-index: 9;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+
+}
+
+.levelSquare{
+    background-color: rgb(39, 38, 38);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    margin-left: 7rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 6.5rem;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;   
+    cursor: pointer;  
+
+}
+.LockedlevelSquare{
+    background-color: rgb(206, 24, 24);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    margin-left: 7rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 6.5rem;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;   
+ 
+
+}
+
+.levelSelectionScreen{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    background-color: rgb(59, 48, 112);
+    width: 100%;
+    height: 60%;
+    margin-top: 10%;
+    z-index: 101;
+    grid-template-columns: repeat(9, 9rem);
+
+} 
+.levelSelect{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    background-color: rgb(49, 41, 88);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    visibility: hidden;
+
+}
+.settingsWindow{
+    position: absolute;
+    background-color: rgb(49, 41, 88);
+    width: 100%;
+    height: 100%;
+    z-index: 103;
+    visibility: hidden;
+ 
+}
+.settingsWindow2{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    background-color: rgb(113, 105, 153);
+    width: 40rem;
+    height: 70%;
+    z-index: 104;
+    margin-top: 5rem;
+    margin-left: 28rem;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+
+ 
+} 
+.volumesettingsLine{
+    position: absolute;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(1, auto);
+    width: 30rem;
+    height: 10rem;
+    z-index: 105;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    
+}
+.volumesettingsLine p{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 0rem;
+}
+.volumesettings{
+    display: grid;
+    align-content: center;
+    position: inherit;
+    grid-template-columns: repeat(11, 2rem);
+    background-color: rgb(31, 30, 30);
+    width: 22rem;
+    height: 4rem;
+    z-index: 105;
+    margin-left: 4rem;
+    margin-top: 5rem;
+ 
+}
+.volumeBar0{
+    width: 2rem;
+    height: 4rem;
+    background-color: white;
+    cursor: pointer;
+
+
+}
+.volumeBar1{
+    width: 2rem;
+    height: 4rem;
+    background-color: rgb(85, 84, 84);
+    cursor: pointer;
+}
+#onList{
+    position: absolute;
+    left: 96rem;
+    text-align: center;
+    
+}
+#onList h1{
+    color: rgb(0, 0, 0);
+    size: 30px;
+    padding: 2px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
+}
+ul{
+    list-style-type: none;
+    
+    
+}
+#onList li{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 2px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-image: url(../images/panda.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+
+}
